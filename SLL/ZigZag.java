@@ -52,9 +52,9 @@ public class ZigZag<E>{
 
         boolean n = zigZag.checkZigZag(newList);
         if(n){
-            System.out.println("It is zigZag");
+            System.out.println("It is ZigZag"); // this will be the output, since it is a ZigZag sequence
         }else{
-            System.out.println("It's not zigZag");
+            System.out.println("It's not ZigZag");
         }
     }
 }
