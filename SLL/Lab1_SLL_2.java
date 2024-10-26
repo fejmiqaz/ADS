@@ -1,5 +1,19 @@
-package Labs;
+/* You are given a single linked list with String nodes. Additionally, you are given one more integer L. You need to delete every node from the list that contains a String with less than L characters.
 
+Input: In the first line from the input the number of elements in the list is given - N, and then in the next N lines the elements themselves. In the last line, the integer L is given.
+
+Output: The list before and after the transformation
+EXAMPLE:
+INPUT:
+3
+Sky
+Blue
+Cloud
+5
+
+OUTPUT:
+Cloud
+*/
 import java.util.Scanner;
 
 public class Lab1_SLL_2<E> {
