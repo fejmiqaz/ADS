@@ -1,5 +1,12 @@
-package Labs;
+/* For a given doubly-linked list with N integers, you need to find the number of elements such that the average of all elements before it is bigger than the average of all elements after it in the list. 
 
+Input: The first number in the input is the number of integers in the list N, then in the next line the elements are given, separated by spaces:
+5
+1 2 3 4 5
+
+Output: The number of elements that satisfy the condition:
+0
+*/
 import java.util.Scanner;
 
 public class Lab2_DLL {
