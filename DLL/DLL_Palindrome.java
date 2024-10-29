@@ -1,4 +1,3 @@
-package Labs;
 import java.util.Scanner;
 public class DLL_Palindrome {
     public static void main(String[] args) {
