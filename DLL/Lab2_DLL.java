@@ -18,44 +18,37 @@ public class Lab2_DLL {
             list.insertLast(sc.nextInt());
         }
 
-        // ^^^ input of the List
-
-        DLLNode<Integer> current = list.getFirst();
-
-        if(current == null){ // check if the list is empty or not
-            System.out.println("Empty List");
-        }
-        int cnt = -1; // set a counter for the elements that satisfy the condition, starting from -1 bcs we don't want the first elements of both of the sides
-
-        while(current!=null){ // iterate through the list
-            int sumLeft = 0, cntLeft = 0; // declare the sum and counter for the left side
-            DLLNode<Integer> left = list.getFirst(); // declare a left node
-            while(left!=current){ // iterate from the right
-                sumLeft += left.element; // sum the elements
-                cntLeft++; // count the elements
-                left = left.succ; // move backward
+        DLLNode<Integer> tmp = list.getFirst();
+        if(tmp == null){ System.out.println("Empty list"); }
+        
+        int cnt = -1;
+        while(tmp != null){
+            int sum = 0, count = 0;
+            double avgLeft = 0.0, avgRight = 0.0;
+            DLLNode<Integer> left = tmp.pred;
+            while(left!=null){
+                sum += left.element;
+                count++;
+                left = left.pred;
             }
-            double avgLeft = 0.0; // declare average for the left side
-            if(cntLeft > 0){
-                avgLeft = (double)sumLeft / cntLeft; // do the avg
+            if(count > 0){
+                avgLeft = (double)sum/count;
             }
-            int sumRight = 0, cntRight = 0; // same for the right side
-            DLLNode<Integer> right = current.succ; // it st
-            while(right!=null){ // iterate from left
-                sumRight += right.element; // sum those elements
-                cntRight++; // cound them
-                right = right.succ; // move forward
+            sum = 0;
+            count = 0;
+            DLLNode<Integer> right = tmp.succ;
+            while(right!=null){
+                sum += right.element;
+                count++;
+                right = right.succ;
             }
-
-            double avgRight = 0.0; // declare the avg for the right side
-            if(cntRight > 0){
-                avgRight = (double)sumRight / cntRight; // get the avg
+            if(count > 0){
+                avgRight = (double)sum/count;
             }
             if(avgLeft > avgRight){
-                cnt++; // count how many elements satisfy the condition
+                cnt++;
             }
-
-            current = current.succ; // continue
+            tmp = tmp.succ;
         }
         System.out.println(cnt);
     }
