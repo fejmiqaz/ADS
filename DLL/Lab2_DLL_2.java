@@ -1,5 +1,3 @@
-package Labs;
-
 /* You are given a doubly linked list of integers. Additionally, there is one more natural number k. You need to replace
 * the last k elements of the list to the beginning of the list, in the same order.
 * Input:
