@@ -21,7 +21,6 @@ public class Divide_SLL_Odd_Even {
         SLL<Integer> even = new SLL<Integer>();
         SLL<Integer> odd = new SLL<Integer>();
         while(current!=null){
-
             if(current.element % 2 == 0){
                 even.insertLast(current.element);
             }else{
