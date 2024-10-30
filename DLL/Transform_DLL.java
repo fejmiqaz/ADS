@@ -1,5 +1,3 @@
-package Labs;
-
 import java.util.Scanner;
 
 /* Given a doubly linked list of integers, transform the list so that it is shuffled N times (N > 0 and read from standard input) as follows:
