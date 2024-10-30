@@ -28,7 +28,7 @@ because the sum 1 = 1 is the largest cumulative sum from the beginning of the li
 Output:
 1 <-> 4 <-> 5 <-> 6 <-> 2 <-> 8 <-> 3 <-> 0 <-> 6 <-> 4 <-> 3 <-> 7 <-> 9 <-> 1 */
 
-public class TransformDLL {
+public class Transform_DLL {
     public static void main(String[] args) {
         DLL<Integer> list = new DLL<Integer>();
         Scanner sc = new Scanner(System.in);
