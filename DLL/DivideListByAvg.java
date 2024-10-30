@@ -1,5 +1,3 @@
-package Labs;
-
 /* Given a doubly linked list whose nodes each contain one natural number. The list should be divided into two resulting lists,
  i.e. the first list should contain all nodes that contain numbers less than or equal to the average of the list, and the second
  should contain all nodes that contain numbers greater than the average of the list. The nodes in the resulting lists are added
