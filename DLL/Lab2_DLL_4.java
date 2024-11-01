@@ -1,5 +1,3 @@
-package Labs;
-
 import java.util.Scanner;
 
 /* You are given a doubly-linked list of integers. Additionally, there is one more natural number k. You need to rotate the elements of the list k times to the left.
