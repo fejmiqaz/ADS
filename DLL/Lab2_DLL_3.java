@@ -1,9 +1,4 @@
-package Labs;
-
 import java.util.Scanner;
-
-
-
 /*
 Given a doubly linked list of integers. In addition, another integer M and a natural number k are also given.
  We need to find the first occurrence of M in the list and move that number k places to the left.
@@ -30,6 +25,8 @@ Input:
 Output:
 5<->3<->8<->6<->2<->4<->1<->9<->7
 5<->3<->8<->6<->2<->1<->9<->4<->7
+
+*** THIS TASK IS NOT SOLVED COMPLETELY! ***
 
 */
 
