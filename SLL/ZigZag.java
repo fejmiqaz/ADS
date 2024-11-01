@@ -1,4 +1,5 @@
-package Exercises.LinkedLists;
+/* The task is to check for a given single linked list if it is a ZigZag.
+A list is considered ZigZag if it is in this format: 1->2->1->2->1, which means 1 is less than 2, and 2 is bigger than the next 1. Another example: 6->8->5->7->3->4->2. */
 
 public class ZigZag<E>{
     private SLL<E> list;
