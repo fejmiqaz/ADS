@@ -15,9 +15,7 @@ Output: The list before and after the transformation
  Output:
  1<->2<->3<->4<->5
  3<->4<->5<->1<->2
-
- ** THIS TASK IS NOT SOLVED COMPLETELY!
-
+ 
  */
 
 public class Lab2_DLL_4 {
