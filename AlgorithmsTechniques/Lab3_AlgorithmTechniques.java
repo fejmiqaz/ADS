@@ -1,5 +1,3 @@
-package Labs.AlgorithmsTechniques;
-
 import java.util.Scanner;
 
 /* We are given N digits. Write an algorithm that composes the largest possible number from those digits.
