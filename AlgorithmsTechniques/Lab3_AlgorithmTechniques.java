@@ -50,7 +50,7 @@ public class Lab3_AlgorithmTechniques {
             arr[i] = sc.nextInt();
         }
 
-        /* QUICK SORT */
+        /* QUICK SORT --> O(n + log(n)) time complexity */
         quickSortDescending(arr, 0, n-1);
         long largestNumber = 0;
         for (int i = 0; i < n; i++) {
@@ -59,7 +59,7 @@ public class Lab3_AlgorithmTechniques {
 
         System.out.print(largestNumber);
 
-        /* BUBBLE SORT */
+        /* BUBBLE SORT --> O(n^2) time complexity */
         /*for(int i = 0; i < n; i++){
             for(int j = 0; j < n - 1 - i; j++){
                 if(arr[j] < arr[j+1]){
