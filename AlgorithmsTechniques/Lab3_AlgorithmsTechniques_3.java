@@ -1,4 +1,3 @@
-package Labs.AlgorithmsTechniques;
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -14,7 +13,14 @@ import java.util.Arrays;
 * Output: 1
 * 3 10
 * 3 8 9
-* Output : 2*/
+* Output : 2
+* 3 15
+* 3 8 13
+* Output: 3
+* 8 15
+* 3 8 13 10 1 3 5 9
+* Output: 3
+*/
 
 public class Lab3_AlgorithmsTechniques_3 {
 
