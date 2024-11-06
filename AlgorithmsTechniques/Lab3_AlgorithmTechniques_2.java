@@ -1,5 +1,3 @@
-package Labs.AlgorithmsTechniques;
-
 /* We are given N tasks with estimated completion time and the amount we can earn from that task. Write an algorithm that
 * finds the maximum earnings we can have for 40 hours. Note that we can have a partial earning from a partially completed task.
 * Input: The first number in the input is the number of tasks N, then in the next N lines are  the time needed for the task (in hours)
