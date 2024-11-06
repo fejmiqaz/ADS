@@ -1,5 +1,3 @@
-package Labs.AlgorithmsTechniques;
-
 import java.util.Scanner;
 
 /* There were N adults and M children that wanted to travel from the bus station in FinTown to the neighbouring city MinTown.
@@ -22,6 +20,8 @@ Input:
 Output:
 300
 400
+
+*** Shoutout Omer & Fisnik ***
 */
 
 public class Lab3_AlgorithmsTechniques_4 {
