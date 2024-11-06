@@ -1,5 +1,3 @@
-package Labs.AlgorithmsTechniques;
-
 import java.util.Scanner;
 
 public class Lab3_MergeSort {
