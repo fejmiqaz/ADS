@@ -32,14 +32,23 @@ public class Lab7_Trees_1 {
         }
     }
     private static int leavesCount(SLLTree.SLLNode<Integer> node){
-        if(node.firstChild == null){
-            return 1;
+        if(node == null){
+            return 0;
         }
         int total = 0;
-        SLLTree.SLLNode<Integer> child = node.firstChild;
-        while(child != null){
-            total += leavesCount(child);
-            child = child.sibling;
+        Stack<SLLTree.SLLNode<Integer>> stack = new Stack<>();
+        stack.push(node);
+        while(!stack.isEmpty()){
+            SLLTree.SLLNode<Integer> curr = stack.pop();
+            if(curr.firstChild == null){
+                total++;
+            }else{
+                SLLTree.SLLNode<Integer> child = curr.firstChild;
+                while(child != null){
+                    stack.push(child);
+                    child = child.sibling;
+                }
+            }
         }
         return total;
     }
