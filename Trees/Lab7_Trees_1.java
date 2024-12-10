@@ -3,6 +3,7 @@ package Labs.Trees;
 import java.util.Scanner;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Stack;
 
 public class Lab7_Trees_1 {
     public static void main(String[] args) {
