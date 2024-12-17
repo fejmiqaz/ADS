@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
+
 public class Main{
     
     private static int countDepth(BNode<Integer> node, int element){
