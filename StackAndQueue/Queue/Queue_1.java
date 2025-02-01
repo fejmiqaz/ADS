@@ -2,6 +2,25 @@ import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.NoSuchElementException;
 
+class Person {
+    public String name;
+    public int m1;
+    public int m2;
+    public int m3;
+
+    Person(String name, int m1, int m2, int m3) {
+        this.name = name;
+        this.m1 = m1;
+        this.m2 = m2;
+        this.m3 = m3;
+    }
+
+    @Override
+    public String toString() {
+        return name + " " + m1 + " " + m2 + " " + m3;
+    }
+}
+
 public class Queue_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -149,24 +168,4 @@ class LinkedQueue<E> implements Queue<E> {
             throw new NoSuchElementException();
     }
 
-}
-
-
-class Person {
-    public String name;
-    public int m1;
-    public int m2;
-    public int m3;
-
-    Person(String name, int m1, int m2, int m3) {
-        this.name = name;
-        this.m1 = m1;
-        this.m2 = m2;
-        this.m3 = m3;
-    }
-
-    @Override
-    public String toString() {
-        return name + " " + m1 + " " + m2 + " " + m3;
-    }
 }
