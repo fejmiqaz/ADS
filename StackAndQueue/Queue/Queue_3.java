@@ -1,6 +1,20 @@
 import java.util.Scanner;
 import java.util.NoSuchElementException;
 
+class FinkiStudent {
+    public String name;
+    public Integer check1;
+    public Integer check2;
+    public Integer check3;
+
+    public FinkiStudent(String name, Integer check1, Integer check2, Integer check3) {
+        this.name = name;
+        this.check1 = check1;
+        this.check2 = check2;
+        this.check3 = check3;
+    }
+}
+
 public class Queue_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -148,18 +162,4 @@ interface Queue<E> {
 
     public E dequeue();
     // Go otstranuva i vrakja pochetniot element na redicata.
-}
-
-class FinkiStudent {
-    public String name;
-    public Integer check1;
-    public Integer check2;
-    public Integer check3;
-
-    public FinkiStudent(String name, Integer check1, Integer check2, Integer check3) {
-        this.name = name;
-        this.check1 = check1;
-        this.check2 = check2;
-        this.check3 = check3;
-    }
 }
