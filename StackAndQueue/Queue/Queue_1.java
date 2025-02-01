@@ -1,8 +1,58 @@
-
 import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.NoSuchElementException;
 
+public class Queue_1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        LinkedQueue<Person> queue = new LinkedQueue<Person>();
+        int n = sc.nextInt();
+        sc.nextLine();
+        LinkedQueue<Person> science = new LinkedQueue<Person>();
+        LinkedQueue<Person> scienceFiction = new LinkedQueue<Person>();
+        LinkedQueue<Person> history = new LinkedQueue<Person>();
+        for (int i = 0; i < n; i++) {
+            String name = sc.nextLine();
+            int m1 = sc.nextInt();
+            int m2 = sc.nextInt();
+            int m3 = sc.nextInt();
+            sc.nextLine();
+            Person person = new Person(name, m1, m2, m3);
+            if(person.m1 == 1){
+                science.enqueue(person);
+            }else if(person.m2 == 1){
+                scienceFiction.enqueue(person);
+            }else if(person.m3 == 1){
+                history.enqueue(person);
+            }
+        }
+
+        Person temp = null;
+        while(!science.isEmpty()) {
+            temp = science.dequeue();
+            if(temp.m2 == 1){
+                scienceFiction.enqueue(temp);
+            }else if(temp.m3 == 1){
+                history.enqueue(temp);
+            }else{
+                System.out.println(temp.name);
+            }
+        }
+        while(!scienceFiction.isEmpty()) {
+            temp = scienceFiction.dequeue();
+            if(temp.m3 == 1){
+                history.enqueue(temp);
+            }else{
+                System.out.println(temp.name);
+            }
+        }
+        while(!history.isEmpty()) {
+            temp = history.dequeue();
+            System.out.println(temp.name);
+        }
+
+    }
+}
 
 class SLLNode<E> {
     protected E element;
@@ -118,57 +168,5 @@ class Person {
     @Override
     public String toString() {
         return name + " " + m1 + " " + m2 + " " + m3;
-    }
-}
-
-public class Queue_1 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        LinkedQueue<Person> queue = new LinkedQueue<Person>();
-        int n = sc.nextInt();
-        sc.nextLine();
-        LinkedQueue<Person> science = new LinkedQueue<Person>();
-        LinkedQueue<Person> scienceFiction = new LinkedQueue<Person>();
-        LinkedQueue<Person> history = new LinkedQueue<Person>();
-        for (int i = 0; i < n; i++) {
-            String name = sc.nextLine();
-            int m1 = sc.nextInt();
-            int m2 = sc.nextInt();
-            int m3 = sc.nextInt();
-            sc.nextLine();
-            Person person = new Person(name, m1, m2, m3);
-            if(person.m1 == 1){
-                science.enqueue(person);
-            }else if(person.m2 == 1){
-                scienceFiction.enqueue(person);
-            }else if(person.m3 == 1){
-                history.enqueue(person);
-            }
-        }
-
-        Person temp = null;
-        while(!science.isEmpty()) {
-            temp = science.dequeue();
-            if(temp.m2 == 1){
-                scienceFiction.enqueue(temp);
-            }else if(temp.m3 == 1){
-                history.enqueue(temp);
-            }else{
-                System.out.println(temp.name);
-            }
-        }
-        while(!scienceFiction.isEmpty()) {
-            temp = scienceFiction.dequeue();
-            if(temp.m3 == 1){
-                history.enqueue(temp);
-            }else{
-                System.out.println(temp.name);
-            }
-        }
-        while(!history.isEmpty()) {
-            temp = history.dequeue();
-            System.out.println(temp.name);
-        }
-
     }
 }
