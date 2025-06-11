@@ -1,0 +1,17 @@
+6
+header1#
+header2#
+Body#
+#Body
+#header2
+#header1
+-> Valid
+
+6
+header1#
+header2#
+Body#
+#header2
+#header1
+#Body
+-> Invalid

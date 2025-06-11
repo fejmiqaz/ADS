@@ -1,0 +1,39 @@
+func1
+func2
+endfunc2
+func3
+endfunc3
+endfunc1
+x
+-> Valid
+
+func1
+func2
+endfunc2
+func3
+endfunc1
+x
+-> Invalid
+
+func1
+func2
+endfunc2
+func3
+endfunc3
+x
+-> Invalid
+
+func3
+func1
+endfunc1
+func1
+endfunc1
+func3
+func2
+func1
+endfunc1
+endfunc2
+endfunc3
+endfunc3
+x
+-> Valid

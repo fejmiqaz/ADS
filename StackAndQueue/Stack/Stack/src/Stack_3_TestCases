@@ -1,0 +1,29 @@
+8
+\begin{text}
+\begin{section}
+Hello
+\end{section}
+\begin{subsection}
+World
+\end{subsection}
+\end{text}
+-> VALID
+
+4
+\begin{section}
+\begin{text}
+\end{section}
+\end{text}
+-> INVALID
+
+2
+\begin{section}
+\end{section}
+-> VALID
+
+4
+\end{subsection}
+\begin{section}
+text
+\end{section}
+-> INVALID

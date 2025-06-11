@@ -1,0 +1,43 @@
+6
+begin {theorem}
+begin {equation}
+begin {proof}
+end {equation}
+end {proof}
+end {theorem}
+-> Invalid
+
+6
+begin {theorem}
+begin {equation}
+begin {proof}
+end {proof}
+end {equation}
+end {theorem}
+-> Valid
+
+5
+begin {theorem}
+begin {proof}
+begin {equation}
+end {equation}
+end {theorem}
+-> Invalid
+
+6
+begin {proof}
+begin {equation}
+begin {theorem}
+end {theorem}
+end {equation}
+end {proof}
+-> Invalid
+
+6
+begin {theorem}
+end {theorem}
+begin {equation}
+end {equation}
+begin {proof}
+end {proof}
+-> Valid
